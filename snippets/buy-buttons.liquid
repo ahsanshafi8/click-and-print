@@ -48,7 +48,7 @@
             {% if product.selected_or_first_available_variant.available == false %}
               disabled
             {% endif %}
-          >
+          >{% render 'gift-wrapping' %}
             <span>
               {%- if product.selected_or_first_available_variant.available -%}
                 {{ 'products.product.add_to_cart' | t }}
