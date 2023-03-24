@@ -256,6 +256,8 @@
               {% render 'product-variant-picker', block: block, product: product %}
             {%- when 'buy_buttons' -%}
               {%- render 'buy-buttons', block: block, product: product, product_form_id: product_form_id, show_pickup_availability: true -%}
+            {% when 'gift' %}
+            {% render 'gift-wrapping' %}
             {%- when 'rating' -%}
               {%- if product.metafields.reviews.rating.value != blank -%}
                 {% liquid
@@ -936,6 +938,17 @@
           "id": "page",
           "type": "page",
           "label": "t:sections.main-product.blocks.popup.settings.page.label"
+        }
+      ]
+    },
+    {
+      "type":"gift",
+      "name":"gift",
+      "limit":1,
+      "settings":[
+        { 
+          "type": "paragraph",
+          "content": "Gift add option"
         }
       ]
     },
