@@ -22,16 +22,8 @@ linklists.gift-wrapping.links.first.type == 'product_link' %}
       style="display:inline; padding-left: 5px; float: none;"
     >
       For {{ linklists.gift-wrapping.links.first.object.price | money }}
-      You have to pay this amount for wrap.
+      If you want to add gift wrap
     </label>
-  </p>
-  <p>
-    <label style="display:block" for="gift-note"
-      >Gift message (free and optional):</label
-    >
-    <textarea name="attributes[gift-note]" id="gift-note">
-{{ cart.attributes.gift-note }}</textarea
-    >
   </p>
 </div>
 
