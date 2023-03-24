@@ -13,7 +13,7 @@ linklists.gift-wrapping.links.first.type == 'product_link' %}
       name="attributes[gift-wrapping]"
       value="yes"
       {% if cart.attributes.gift-wrapping %}
-      checked="checked"
+      checked
       {% endif %}
       style="float: none"
     />
@@ -107,19 +107,6 @@ item.id == id %} {% assign gift_wraps_in_cart = item.quantity %} {% endif %}
         Shopify.Cart.GiftWrap.remove();
       }
 
-    });
-
-    document.querySelector('#gift-note').addEventListener("change", function(evt) {
-      var note = evt.target.value;
-      var headers = new Headers({ 'Content-Type': 'application/json' });
-
-      var request = {
-        method: 'POST',
-        headers: headers,
-        body: JSON.stringify({ attributes: { 'gift-note': note } })
-      };
-
-      fetch('/cart/update.js', request);
     });
   });
 </script>
