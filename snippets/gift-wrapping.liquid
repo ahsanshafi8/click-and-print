@@ -51,9 +51,12 @@ item.id == id %} {% assign gift_wraps_in_cart = item.quantity %} {% endif %}
       body: JSON.stringify({ updates: { {{ id }}: 1 }, attributes: { 'gift-wrapping': true } })
     };
     fetch('/cart/update.js', request)
-    .then(function() {
-      location.href = '/cart';
-    });
+    .then(response => {
+        return response.json();
+      })
+      .catch((error) => {
+        console.error('Error:', error);
+      });
   }
 
   Shopify.Cart.GiftWrap.remove = function() {
@@ -65,9 +68,12 @@ item.id == id %} {% assign gift_wraps_in_cart = item.quantity %} {% endif %}
       body: JSON.stringify({ updates: { {{ id }}: 0 }, attributes: { 'gift-wrapping': '' } })
     };
     fetch('/cart/update.js', request)
-    .then(function() {
-      location.href = '/cart';
-    });
+    .then(response => {
+        return response.json();
+      })
+      .catch((error) => {
+        console.error('Error:', error);
+      });
   }
 
   // If we have nothing but gift-wrap items in the cart.
