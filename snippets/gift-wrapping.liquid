@@ -9,6 +9,8 @@ linklists.gift-wrapping.links.first.type == 'product_link' %}
       name="attributes[gift-wrapping]"
       value="yes"
       {% if cart.attributes.gift-wrapping %}
+      checked="checked"
+      {% else %}
       checked
       {% endif %}
     />
