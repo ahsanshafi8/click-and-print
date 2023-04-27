@@ -484,8 +484,7 @@
   "shopify": {
     "checkout": {
       "shipping": {
-        "shipping_method_notice": "We are Charging for Shipping method as it is important to do",
-        "shipping_method_title": "Shipping method title"
+        "shipping_method_notice": "We offer various shipping options to cater to your needs and preferences. Our store provides standard and expedited shipping within the contiguous United States, free shipping for orders above a certain amount, and international shipping."
       }
     }
   }
