@@ -480,5 +480,12 @@
       "signup_form_success": "We will send you an email right before we open!",
       "password_link": "Enter using password"
     }
+  },
+  "shopify": {
+    "checkout": {
+      "shipping": {
+        "shipping_method_notice": "We are Charging for Shipping method as it is important to do"
+      }
+    }
   }
 }
