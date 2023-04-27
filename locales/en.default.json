@@ -485,7 +485,6 @@
     "checkout": {
       "shipping": {
         "shipping_method_notice": "We are Charging for Shipping method as it is important to do",
-        "title": "Shipping title for Fun",
         "shipping_method_title": "Shipping method title"
       }
     }
